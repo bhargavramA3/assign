@@ -1,14 +1,17 @@
 {
-    "version": 2,
-    "functions": {
-      "api/*.php": {
-        "runtime": "vercel-php@0.6.0"
-      }
-    },
-    "routes": [
-      { "src": "/(.*)\\.php$", "dest": "/api/$1.php" },
-      { "src": "/(.*)", "dest": "/api/login.php" }
-    ],
+    
+        "version": 2,
+        "builds": [
+          { "src": "*.html", "use": "@vercel/static" },
+          { "src": "*.php", "use": "vercel-php@0.3.1" },
+          { "src": "*.css", "use": "@vercel/static" },
+          { "src": "*.js", "use": "@vercel/static" },
+          { "src": "*.jpg", "use": "@vercel/static" }
+        ],
+        "routes": [
+          { "src": "/(.*)", "dest": "/index.php" }
+        ]
+      ,
     "env": {
       "DB_HOST": "database-1.cvg62oeaiswq.ap-southeast-2.rds.amazonaws.com",
       "DB_USER": "admin",

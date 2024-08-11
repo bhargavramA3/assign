@@ -1,5 +1,5 @@
 <?php
-	include("config.php");
+	include(__DIR__ . "/config.php");
 	session_start();
 	$email = $_POST['email'];
 	$password=$_POST['password'];
@@ -23,16 +23,16 @@
 		$_SESSION['login_user'] = $email;
 			echo $rowdata['role'];
 			if(strcmp($rowdata['role'],"user")){
-				header("location: /api/dash.php");
+				header("location: /dash");
 			}else{
-					header("location: /api/userdash.php");
+					header("location: /userdash");
 			}
 		
 	 } else {
 		
 
 		echo '<script>alert("incorrect credentials")</script>'; 
-		header("location: /api/login.php");
+		header("location: /login");
 		
 	 }
 
