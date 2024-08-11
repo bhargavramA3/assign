@@ -26,7 +26,7 @@
     
             // Close the statement
             mysqli_stmt_close($stmt);
-            header("location: dash.php");
+            header("location: /api/dash.php");
         } else {
             echo "Error preparing statement: " . mysqli_error($conn);
         }
@@ -60,7 +60,7 @@
     
             // Close the statement
             mysqli_stmt_close($stmt);
-            header("location: dash.php");
+            header("location: /api/dash.php");
         } else {
             echo "Error preparing statement: " . mysqli_error($conn);
         }
@@ -93,7 +93,7 @@
     
             // Close the statement
             mysqli_stmt_close($stmt);
-            header("location: dash.php");
+            header("location: /api/dash.php");
         } else {
             echo "Error preparing statement: " . mysqli_error($conn);
         }

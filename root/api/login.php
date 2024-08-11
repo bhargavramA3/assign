@@ -40,7 +40,7 @@
                     </div>
                     <div class=" col-lg-4 col-sm-6 bg-light py-3">
                         <div>
-                        <form action="loginProcess.php" method="POST">
+                        <form action="/api/loginProcess.php" method="POST">
                             <div class="mb-3">
                                 <label class="form-label" for="inputEmail">Email</label>
                                 <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email"/>

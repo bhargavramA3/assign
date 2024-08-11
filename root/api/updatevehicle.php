@@ -1,5 +1,5 @@
 <?php
-	include("config.php");
+	include("/api/config.php");
 	
 	if(isset($_POST['update'])){
 		$id=$_POST['car_id'];

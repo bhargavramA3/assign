@@ -23,16 +23,16 @@
 		$_SESSION['login_user'] = $email;
 			echo $rowdata['role'];
 			if(strcmp($rowdata['role'],"user")){
-				header("location: dash.php");
+				header("location: /api/dash.php");
 			}else{
-					header("location: userdash.php");
+					header("location: /api/userdash.php");
 			}
 		
 	 } else {
 		
 
 		echo '<script>alert("incorrect credentials")</script>'; 
-		header("location: login.php");
+		header("location: /api/login.php");
 		
 	 }
 

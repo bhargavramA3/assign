@@ -1,7 +1,9 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "sairam123";
+$servername = getenv('DB_HOST');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
+$dbname = getenv('DB_NAME');
+$port = getenv('DB_PORT');
 // Create connection
 $conn = new mysqli($servername, $username, $password,"mydb");
 
