@@ -13,25 +13,25 @@ $request_uri = strtok($request_uri, '?');
 switch ($request_uri) {
     case '/':
     case '/login':
-        require __DIR__ . '/login.php';
+        require __DIR__ . '/api/login.php';
         break;
     case '/dash':
-        require __DIR__ . '/dash.php';
+        require __DIR__ . '/api/dash.php';
         break;
     case '/userdash':
-        require __DIR__ . '/userdash.php';
+        require __DIR__ . '/api/userdash.php';
         break;
     case '/updatevehicle':
-        require __DIR__ . '/updatevehicle.php';
+        require __DIR__ . '/api/updatevehicle.php';
         break;
     case '/addvehicle':
-        require __DIR__ . '/addvehicle.php';
+        require __DIR__ . '/api/addvehicle.php';
         break;
     case '/loginProcess':
-        require __DIR__ . '/loginProcess.php';
+        require __DIR__ . '/api/loginProcess.php';
         break;
     case '/co':
-        require __DIR__ . '/co.php';
+        require __DIR__ . '/api/co.php';
         break;
     default:
         // 404 - Page not found
