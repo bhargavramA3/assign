@@ -1,5 +1,5 @@
 <?php
-    include(__DIR__ . "/config.php");
+    include(__DIR__ . "/api/config.php");
     if(isset($_POST['submit'])){
         echo "hello";
         $id=$_POST['car_id'];
@@ -26,7 +26,7 @@
     
             // Close the statement
             mysqli_stmt_close($stmt);
-            header("location: /dash");
+            header("location: /api/dash");
         } else {
             echo "Error preparing statement: " . mysqli_error($conn);
         }
@@ -60,7 +60,7 @@
     
             // Close the statement
             mysqli_stmt_close($stmt);
-            header("location: /dash");
+            header("location: /api/dash");
         } else {
             echo "Error preparing statement: " . mysqli_error($conn);
         }
@@ -93,7 +93,7 @@
     
             // Close the statement
             mysqli_stmt_close($stmt);
-            header("location: /dash");
+            header("location: /api/dash");
         } else {
             echo "Error preparing statement: " . mysqli_error($conn);
         }
