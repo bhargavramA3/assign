@@ -3,7 +3,7 @@
         "version": 2,
         "builds": [
           { "src": "*.html", "use": "@vercel/static" },
-          { "src": "*.php", "use": "vercel-php@0.3.6" },
+          { "src": "*.php", "use": "vercel-php@0.6.0" },
           { "src": "*.css", "use": "@vercel/static" },
           { "src": "*.js", "use": "@vercel/static" },
           { "src": "*.jpg", "use": "@vercel/static" }
